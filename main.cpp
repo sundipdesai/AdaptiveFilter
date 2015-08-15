@@ -37,7 +37,7 @@ int main()
 	 fin2.close();
 
 	// Instantiate NodeList Objects
-    NodeList noiseNode;
+    	NodeList noiseNode;
 	NodeList filterCoeffs;
 
 	// Node pointers to head nodes

@@ -55,13 +55,13 @@ int main()
 
 	while (j < numSamples) {
 		//Push a single measurement to stream
-		n = noiseNode.push( *(mptr + k) ); 
+		n = noiseNode.push( *(mptr + j) ); 
 
 		//Filter measurements
 		*(yptr+j) = filter(f, n);
 
 		//Adaptive Filter Error
-		*(eptr+j) = *(dptr + k) - *(yptr+j);
+		*(eptr+j) = *(dptr + j) - *(yptr+j);
 
 		//Update Filter Coefficients, 
 		//output head node of coefficient stream
